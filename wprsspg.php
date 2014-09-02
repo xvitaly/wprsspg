@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: WP RSS Purger
+Plugin Name: WP-RSS Purge
 Plugin URI: http://www.easycoding.org/projects/wprsspg
 Description: Очищает кэши RSS WordPress.
 Author: V1TSK <vitaly@easycoding.org>
@@ -12,8 +12,8 @@ function rsspg_exec()
 {
   ?>
   <h2>Модуль очистки RSS кэшей WordPress</h2>
-  <div>WP RSS Purger предназначен для лёгкой и быстрой очистки RSS кэшей из базы данных WordPress.</div><br />
-  <div>WP RSS Purger удалит следующее:</div>
+  <div>WP-RSS Purge предназначен для лёгкой и быстрой очистки RSS кэшей из базы данных WordPress.</div><br />
+  <div>WP-RSS Purge удалит следующее:</div>
   <div>
     <ol>
       <li>кэш RSS из таблицы <strong>wp_options</strong>;</li>
@@ -54,7 +54,7 @@ function rsspg_exec()
 
 function wprsspg_a()
 {
-  add_options_page('WP RSS Purger', 'WP RSS Purger', 'manage_options', __FILE__, 'rsspg_exec');
+  add_options_page('WP-RSS Purge', 'WP-RSS Purge', 'manage_options', __FILE__, 'rsspg_exec');
 }
 
 add_action('admin_menu', 'wprsspg_a');
